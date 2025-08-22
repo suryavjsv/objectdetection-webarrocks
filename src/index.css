@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(assets/fonts/Roboto-Regular.ttf)
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  overflow: hidden;
+  background-color: #121212;
+  color: white;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.mirrorX {
+  transform: rotateY(180deg);
+}
+
+.guideLineModal {
+  background-color: rgba(0,0,0,0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.guideLineContent {
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 18px;
+}
+
+.guideLineImage {
+  margin-top: 5em;
+  max-height: 30vh;
+  max-width: 30vw;
+}
+
+.guideLineText {
+  margin-top: 1em;
+}
+
+.guideLineCloseButton {
+  margin-top: 1em;
+  border: 1px solid white;
+  padding: 12px;
+  font-size: 22px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
